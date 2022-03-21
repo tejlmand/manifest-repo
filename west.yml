@@ -1,0 +1,20 @@
+manifest:
+  version: "0.12"
+
+  # "remotes" is a list of locations where git repositories are cloned
+  # and fetched from.
+  remotes:
+    - name: tejlmand
+      url-base: https://github.com/tejlmand
+
+  defaults:
+    remote: tejlmand
+
+  projects:
+    # Dummy project, we just need a single project, even though we don't care
+    - name: nrfxlib
+      revision: main
+
+  self:
+    path: manifest-repo
+    west-commands: scripts/west-commands.yml
